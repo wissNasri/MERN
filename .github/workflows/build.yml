@@ -6,7 +6,7 @@ on:
 jobs:
   build-analyze-scan:
     name: Build, Analyze, Scan, and Push Docker Images
-    runs-on: ubuntu-latest  # Utilisez ubuntu-latest au lieu de Linux
+    runs-on:  [Linux] # Utilisez ubuntu-latest au lieu de Linux
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
