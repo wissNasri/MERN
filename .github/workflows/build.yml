@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build-analyze-scan:
-    name: Build, Analyze, Scan, and Push Docker Images
+    name: Build, Analyze, Scan, and Push Docker Images 
     runs-on: [Linux]
     steps:
       # Étape 1 : Récupérer le code du repository GitHub
