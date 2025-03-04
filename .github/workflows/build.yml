@@ -36,7 +36,7 @@ jobs:
         run: trivy fs . > trivyfs.txt
 
 
-      # Étape 6 : S'authentifier auprès de Docker Hub
+      # Étape 6 : S'authentifier auprès de Dockerhub
       - name: Log in to Docker Hub
         run: |
           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
